@@ -1,20 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Mizanur
- */
+import java.util.*;
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    static void push(Stack st, int a){
+        st.push(new Integer(a));
+        System.out.println("Push("+a+")");
+        System.out.println("Stack: "+st);
+    }
+    
+    
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Stack st = new Stack();
+        System.out.println("Stack: "+st);
+        
+        for(int i=10; i<=50; i+=10)
+        {
+            push(st, i);
+        }
     }
     
 }
