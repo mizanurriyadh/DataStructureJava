@@ -7,7 +7,12 @@ public class Main {
         System.out.println("Stack: "+st);
     }
     
-    
+    static void pop(Stack st){
+        System.out.println("pop -> ");
+        Integer a = (Integer) st.pop();
+        System.out.println(a);
+        System.out.println("Stack: "+st);
+    }
     
     public static void main(String[] args) {
         Stack st = new Stack();
@@ -16,6 +21,11 @@ public class Main {
         for(int i=10; i<=50; i+=10)
         {
             push(st, i);
+        }
+        
+        for(int i=0; i<5; i++)
+        {
+            pop(st);
         }
     }
     
