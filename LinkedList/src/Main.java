@@ -50,6 +50,24 @@ public class Main {
         // Index
         System.out.println(ll.indexOf("D"));
         System.out.println(ll.lastIndexOf("D"));
+        
+        
+        
+        
+        
+        /* Output =
+            At First Linked List is empty -> []
+            After inserting ->[B, C, D, E, F]
+            After inserting 1st & last ->[First, B, C, D, E, F, Last]
+            7
+            A added to 2nd & Z added before last ->[First, A, B, C, D, E, F, Z, Last]
+            After Removing ->[A, B, C, D, E, F, Z, Last]
+            After Removing Last -> [A, B, C, D, E, F, Z]
+            true
+            false
+            3
+            3
+        */
     }   
     
 }
