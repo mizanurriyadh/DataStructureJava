@@ -51,7 +51,10 @@ public class Main {
         System.out.println(ll.indexOf("D"));
         System.out.println(ll.lastIndexOf("D"));
         
-        
+        // Get & set value
+        Object val = ll.get(2);
+        ll.set(2, val+" Appended");
+        System.out.println("After Replacing value -> "+ ll);
         
         
         
@@ -67,6 +70,7 @@ public class Main {
             false
             3
             3
+            After Replacing value -> [A, B, C Appended, D, E, F, Z]
         */
     }   
     
